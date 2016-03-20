@@ -1,0 +1,55 @@
+%!TEX TS-program = arara
+%
+% File   : common.tex
+% Author : ɛntiˈtɛːt.kaɪ̯
+% Date   : 2016-03-20
+%
+%---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8
+% arara config
+%   arara: lualatex
+%---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8
+
+
+
+\documentclass[a4paper,12pt]{article}
+
+
+
+	\input{packages}     % common packages
+	\input{definitions}  % common definitions
+
+
+	% Titelei
+		\title{\fontspec{Times New Roman}common}
+		\author{\fontspec{Times New Roman}ɛntiˈtɛːt.kaɪ̯}
+		\date{%
+			{\fontspec{Times New Roman}19. März 2016} \\
+			{\bf---} \\[0.2\baselineskip]
+			\fontspec{Times New Roman}\today}
+
+
+
+\begin{document}
+
+
+
+	% List of todos
+		\listoftodos
+
+	% Titelseite
+		\maketitle
+
+	% Zusammenfassung
+		%\input{zusammenfassung}
+
+	% Verzeichnisse
+		\tableofcontents  % Inhaltsverzeichnis
+
+
+
+\end{document}
+
+
+
+%---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8
+% vim:wrap:noet:ts=2 sw=2 sts=2
