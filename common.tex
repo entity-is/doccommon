@@ -49,6 +49,37 @@
 	% Verzeichnisse
 		\tableofcontents  % Inhaltsverzeichnis
 
+	% Inhalt
+		\chapter{Installation}\input{installation}
+		\chapter{Pakete}\input{pakete}
+			\section{Paket polyglossia von François Charette (Maintainer: Arthur
+				Reutenauer)}
+				\input{packages/polyglossia}
+			\section{Paket pdfpages von Andreas Matthias}
+				\input{packages/pdfpages}
+			\section{Paket tabularx von David Carlisle}
+				\input{packages/tabularx}
+			\section{Paket listingsutf8 von Heiko Oberdiek}
+				\input{packages/listingsutf8}
+			\section{Paket todonotes von Henrik Skov Midtiby}
+				\input{packages/todonotes}
+			\section{Paket gitinfo2 von Brent Longborough}
+				\input{packages/gitinfo2}
+			\section{Paket hyperref von Sebastian Rahtz und Heiko Oberdiek}
+				\input{packages/hyperref}
+		\chapter{Definitionen}\input{definitionen}
+			\section{Konfiguration des polyglossia Pakets}
+				\input{definitions/polyglossia}
+			\section{Definitionen diverser Farben}
+				\subsection{Ethan Schoonovers Farbschema „solarized“}
+					\input{definitions/solarized}
+				\subsection{Apple (Finder) Tag-Farben}
+					\input{definitions/findertags}
+			\section{Konfiguration des tabularx Pakets}
+				\input{definitions/tabularx}
+			\section{Konfiguration des listingsutf8 Pakets}
+				\input{definitions/listingsutf8}
+
 	% Schmutztitel (Rückseite)
 		\includepdf{a4schmutztitel}
 
