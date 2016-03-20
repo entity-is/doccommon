@@ -1,0 +1,101 @@
+%
+% File   : gitinfo2.tex
+% Author : ɛntiˈtɛːt.kaɪ̯
+% Date   : 2016-03-20
+%
+%---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8% LaTeX Metadaten
+	\label{sec:Gitinfo2}
+	\index{gitinfo2}
+	\index{Paket!gitinfo2}
+%---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8
+
+
+
+\begin{table}[b]
+	\caption{Git Metadaten}
+	\footnotesize
+	\begin{tabularx}{\textwidth}{lFF} \hline
+		Makro & Inhalt & Bemerkung \\ \hline
+		\verb_\gitAbbrevHash_ &
+			\gitAbbrevHash &
+			Hash (7 Zeichen) \\
+		\verb_\gitHash_ &
+			\gitAbbrevHash\ldots &
+			Hash (40 Zeichen, hier in verkürzter Darstellung) \\ \hline
+		\verb_\gitAuthorName_ &
+			\fontspec{Times New Roman}\gitAuthorName &
+			Autor \\
+		\verb_\gitAuthorEmail_ &
+			\gitAuthorEmail &
+			E-Mail (Autor) \\
+		\verb_\gitAuthorDate_ &
+			\gitAuthorDate &
+			Datum (commit) \\
+		\verb_\gitAuthorIsoDate_ &
+			\gitAuthorIsoDate &
+			ISO-Datum (commit) \\
+		\verb_\gitAuthorUnixDate_ &
+			\gitAuthorUnixDate &
+			Unix-Datum (commit) \\ \hline
+		\verb_\gitCommitterName_ &
+			\fontspec{Times New Roman}\gitCommitterName &
+			Committer \\
+		\verb_\gitCommitterEmail_ &
+			\gitCommitterEmail &
+			E-Mail (Committer) \\
+		\verb_\gitCommitterDate_ &
+			\gitCommitterDate &
+			Committer-Datum \\
+		\verb_\gitCommitterIsoDate_ &
+			\gitCommitterIsoDate &
+			Committer-ISO-Datum \\
+		\verb_\gitCommitterUnixDate_ &
+			\gitCommitterUnixDate &
+			Committer-Unix-Datum \\ \hline
+		\verb_\gitReferences_ &
+			\gitReferences &
+			Referenzen (Tags, Branches) \\
+		\verb_\gitBranch_ &
+			\gitBranch &
+			Aktueller Branch \\ \hline
+		\verb_\gitVtag_ &
+			\gitVtag &
+			\\
+		\verb_\gitVtags_ &
+			\gitVtags &
+			\\
+		\verb_\gitVtagn_ &
+			\gitVtagn &
+			\\ \hline
+		\verb_\gitFirstTagDescribe_ &
+			\gitFirstTagDescribe &
+			\\
+		\verb_\gitDirty_ &
+			\gitDirty &
+			\\
+		\verb_\gitRel_ &
+			\gitRel &
+			Release-Nummer \\
+		\verb_\gitRels_ &
+			\gitRels &
+			\\
+		\verb_\gitReln_ &
+			\gitReln &
+			\\
+		\verb_\gitRoff_ &
+			\gitRoff &
+			Anzahl der commits zwischen HEAD und dem letzten Release \\
+		\verb_\gitTags_ &
+			\gitTags &
+			Liste aller Tags \\
+		\verb_\gitDescribe_ &
+			\gitDescribe &
+			\\ \hline
+	\end{tabularx}
+\end{table}
+\FloatBarrier
+
+
+
+%---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8
+% vim:wrap:noet:ts=2 sw=2 sts=2
