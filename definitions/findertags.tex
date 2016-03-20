@@ -1,0 +1,44 @@
+%
+% File   : findertags.tex
+% Author : ɛntiˈtɛːt.kaɪ̯
+% Date   : 2016-03-20
+%
+%---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8% LaTeX Metadaten
+	\label{sec:FinderTags}
+	\index{Tags}
+	\index{Farbschema!Tags}
+%---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8
+
+
+
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}
+		%\draw (5.45,1.6) -- (5.45,1.9) node [above] {\scriptsize Standard-Farben};
+		%\draw (0.3,1.6) -- (10.6,1.6);
+		\draw [fill=Finder-Tag-Red] (0,0) rectangle (1.3,1.3);
+		\draw [fill=Finder-Tag-Orange] (1.6,0) rectangle (2.9,1.3);
+		\draw [fill=Finder-Tag-Yellow] (3.2,0) rectangle (4.5,1.3);
+		\draw [fill=Finder-Tag-Green] (4.8,0) rectangle (6.1,1.3);
+		\draw [fill=Finder-Tag-Blue] (6.4,0) rectangle (7.7,1.3);
+		\draw [fill=Finder-Tag-Violet] (8,0) rectangle (9.3,1.3);
+		\draw [fill=Finder-Tag-Gray] (9.6,0) rectangle (10.9,1.3);
+		\draw (0.65,0) node [anchor=north] {\scriptsize Red};
+		\draw (2.25,0) node [anchor=north] {\scriptsize Orange};
+		\draw (3.85,0) node [anchor=north] {\scriptsize Yellow};
+		\draw (5.45,0) node [anchor=north] {\scriptsize Green};
+		\draw (7.05,0) node [anchor=north] {\scriptsize Blue};
+		\draw (8.65,0) node [anchor=north] {\scriptsize Violet};
+		\draw (10.25,0) node [anchor=north] {\scriptsize Gray};
+	\end{tikzpicture}
+	\caption{Farben der Tags in Apples Finder}
+\end{figure}
+
+Die Farben können verwendet werden, indem den Farbnamen unter den obigen Farbfeldern die Zeichenkette \texttt{Finder-Tag-} vorangestellt wird. \\
+
+\paragraph*{Beispiel:} \verb_{\color{Finder-Tag-Blue}blauen}_ erzeugt einen {\color{Finder-Tag-Blue}blauen} Text.
+
+
+
+%---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8
+% vim:wrap:noet:ts=2 sw=2 sts=2
