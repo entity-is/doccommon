@@ -44,8 +44,17 @@
 	% Schmutztitel (Vorderseite)
 		\includepdf{a4schmutztitel}
 
+	% Frontispitz
+		%\input{frontispitz}
+
 	% Titelseite
 		\maketitle
+
+	% Impressum
+		%\input{impressum}
+
+	% Widmung
+		%\input{widmung}
 
 	% Zusammenfassung
 		%\input{zusammenfassung}
@@ -59,6 +68,11 @@
 		\listoffigures      % Abbildungsverzeichnis
 		\listoftables       % Tabellenverzeichnis
 		\lstlistoflistings  % Verzeichnis der Listings
+
+%---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8
+
+	% Vorwort
+		%\input{vorwort}
 
 	% Inhalt
 		\chapter{Installation}\input{installation}
@@ -97,11 +111,19 @@
 
 %---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8
 
+	% Literaturverzeichnis
+		%
+
 	% Stichwortverzeichnis
 		%\indexprologue{\noindent }
 		\printindex
 
 %---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8
+
+	% Anhang
+		\appendix
+	% Kolophon
+		%\input{kolophon}
 
 	% Schmutztitel (Rückseite)
 		\includepdf{a4schmutztitel}
