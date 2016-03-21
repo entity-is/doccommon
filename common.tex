@@ -7,6 +7,8 @@
 %---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8
 % arara config
 %   arara: lualatex
+%   arara: makeindex
+%%   arara: lualatex
 %---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8
 
 
@@ -19,6 +21,7 @@
 	\input{packages}     % common packages
 	\input{definitions}  % common definitions
 
+	\makeindex[title=Stichwortverzeichnis]
 
 	% Titelei
 		\title{\fontspec{Times New Roman}common}
@@ -91,6 +94,14 @@
 				\input{definitions/tabularx}
 			\section{Konfiguration des listingsutf8 Pakets}
 				\input{definitions/listingsutf8}
+
+%---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8
+
+	% Stichwortverzeichnis
+		%\indexprologue{\noindent }
+		\printindex
+
+%---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8
 
 	% Schmutztitel (Rückseite)
 		\includepdf{a4schmutztitel}
