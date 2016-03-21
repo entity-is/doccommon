@@ -3,7 +3,8 @@
 % Author : ɛntiˈtɛːt.kaɪ̯
 % Date   : 2016-03-21
 %
-%---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8% LaTeX Metadaten
+%---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8
+% LaTeX Metadaten
 	\label{sec:Listings}
 	\index{Listing}
 %---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8
@@ -13,6 +14,11 @@
 \lstinputlisting[language={[LaTeX]TeX},caption={packages.tex}]{../../../tex/latex/common/packages}
 
 \lstinputlisting[language={[LaTeX]TeX},caption={definitions.tex}]{../../../tex/latex/common/definitions}
+
+\lstinputlisting[language=bash,caption={Git-hook post-checkout}]{{.git/hooks/post-checkout}}
+% Der Dateiname muss in zwei geschweifte Klammern eingefasst werden, damit er
+% nicht zu „post-checkout.tex“ expandiert wird.  Dieser Trick funktioniert evtl.
+% nur in Lua(La)TeX.
 
 
 
