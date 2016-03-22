@@ -8,12 +8,12 @@
 % arara config
 %   arara: lualatex
 %   arara: makeindex
+%   arara: bibtex
 %%   arara: lualatex
 %---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8
 
 
 
-\documentclass[a4paper,12pt]{article}
 \documentclass[a4paper,12pt]{report}
 
 
@@ -24,7 +24,6 @@
 	\makeindex[title=Stichwortverzeichnis]
 
 	% Titelei
-		\title{\fontspec{Times New Roman}common}
 		\title{\fontspec{Times New Roman}\common}
 		\author{\fontspec{Times New Roman}ɛntiˈtɛːt.kaɪ̯}
 		\date{%
@@ -57,13 +56,11 @@
 		%\input{widmung}
 
 	% Zusammenfassung
-		%\input{zusammenfassung}
 	% Eine Zusammenfassung wird in der Regel nur bei Artikeln,
 	% manchmal auch bei Berichten gegeben.
 		\input{zusammenfassung}
 
 	% Verzeichnisse
-		\tableofcontents  % Inhaltsverzeichnis
 		\tableofcontents    % Inhaltsverzeichnis
 		\listoffigures      % Abbildungsverzeichnis
 		\listoftables       % Tabellenverzeichnis
@@ -82,7 +79,8 @@
 %---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8
 
 	% Literaturverzeichnis
-		%
+		\bibliographystyle{alphadin}
+		\bibliography{latex}
 
 	% Stichwortverzeichnis
 		%\indexprologue{\noindent }
