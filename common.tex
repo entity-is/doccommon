@@ -8,7 +8,7 @@
 % arara config
 %   arara: lualatex
 %   arara: makeindex
-%   arara: bibtex
+%   arara: biber
 %%   arara: lualatex
 %---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8
 
@@ -31,6 +31,8 @@
 			{\bf---} \\[0.2\baselineskip]
 			\fontspec{Times New Roman}\today}
 
+	% Literatur
+		\addbibresource{latex.bib}
 
 
 \begin{document}
@@ -79,8 +81,7 @@
 %---+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8
 
 	% Literaturverzeichnis
-		\bibliographystyle{alphadin}
-		\bibliography{latex}
+		\printbibliography
 
 	% Stichwortverzeichnis
 		%\indexprologue{\noindent }
